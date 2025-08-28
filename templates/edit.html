@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block edit %}
+<div class="formadd">
+  <h1>FORM EDIT CONTACT</h1>
+  <form action="{{url_for('edit', id=contact_by_name['id'])}}" method="post">
+    <label for="nama">Nama</label>
+    <input
+      type="text"
+      name="nama"
+      id="nama"
+      value="{{contact_by_name['nama']}}"
+    />
+    <label for="no_hp">No Telp</label>
+    <input
+      type="text"
+      name="no_hp"
+      id="no_hp"
+      value="{{contact_by_name['no_hp']}}"
+    />
+    <label for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      value="{{contact_by_name['email']}}"
+    />
+    <input type="submit" value="Simpan" />
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block tambah %}
+<div class="formadd">
+  <h1>FORM CONTACT</h1>
+  <form action="/add" method="post">
+    <label for="id">id</label>
+    <input type="number" name="id" id="id" />
+    <label for="nama">Nama</label>
+    <input type="text" name="nama" id="nama" />
+    <label for="no_hp">No Telp</label>
+    <input type="text" name="no_hp" id="no_hp" />
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <input type="submit" value="Simpan" />
+  </form>
+</div>
+{% endblock %}
